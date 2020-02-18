@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //--- Website description
+    meta(name="description" content="ТЗ для Konsol.Studio")
+    //--- Website keywords
+    meta(name="keywords" content="Тестовое задание, ТЗ, Konsol.Studio")
+
+    title Konsol.Studio
+
+    //------ Page Styles
+    link(rel="stylesheet", href="css/index.min.css")
+    //------ Media Queries File 
+    link(rel="stylesheet" href="css/media.min.css")
+  body
+    section.contact
+      .container
+        .title
+          h1 CALL us 
+            span.title__phone +1 234 555 6677
+          p 27 Ba Trieu St. Hue city, Viet Nam
+          .social
+            a(href="https://www.facebook.com/konsol.studio/" target="_blank").fb
+            a(href="#").twi
+            a(href="https://ru.linkedin.com/company/konsol-studio" target="_blank").in
+            a(href="#").pint
+
+        form.contact__form
+          h2 send a message
+          p Lorem ipsum dolor sit amet, consectetue elit. Quisque eleLorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin sed odio et ante adipiscing lobortis.
+          .form__fields
+            .inputs
+              input(type="text" name="userName" placeholder="Your Name" required)
+              input(type="text" name="userEmail" placeholder="Your Email" required)
+              input(type="text" name="userPhone" placeholder="Phone" required)
+            .textarea
+              textarea(name="userMessage" placeholder="Message")
+          input(type="submit" value="learn more").form__button
+
+        .footer
+          span DIZAINO™ - CREATIVE DESIGN & DEVELOPMENT BY JUNOTEAM
+          a(href="#")
+            img(src="images/ArrowUp.png", alt="")

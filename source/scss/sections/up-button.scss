@@ -1,0 +1,30 @@
+.scrollUp {
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+  background-color: crimson;
+}
+
+.scrollUp:before {
+  content: "\f09e";
+  font-family: 'icomoon';
+  color: red;
+}
+.scrollUp.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-55px);
+}

@@ -1,0 +1,94 @@
+.footer {
+  padding-bottom: 30px;
+}
+
+.footer__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 2px solid #000;
+}
+
+.footer__logo {
+  flex: 0 0 25%;
+  img {
+    width: 270px;
+    margin-top: 60px;
+  }
+}
+
+.footer__company-info {
+  flex: 1 1 auto;
+  margin: 0 30px 0 20px;
+  p {
+    text-align: justify;
+    margin: 10px 0;
+  }
+}
+
+.footer-social a {
+  padding: 0 10px;
+  &:before {
+    font-family: 'icomoon';
+    color: #828282;
+    font-size: 20px;
+    transition: all .4s;
+  }
+  &:hover:before {
+    color: $active-color;
+  }
+}
+
+.footer__fb-link {
+  display: inline-block;
+}
+
+.footer__fb-link:before {
+  content: '\f09a';
+}
+
+.footer__twi-link:before {
+  content: '\f099';
+}
+
+.footer__you-link:before {
+  content: '\f167';
+}
+
+.footer__additional-info {
+  flex: 0 0 270px;
+}
+
+.footer__info-menu, .footer__company-info p {
+  margin-top: 10px;
+}
+
+.footer__info-menu li a {
+  position: relative;
+  color: $main-color;
+  transition: all .3s;
+  padding-left: 15px;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  &:before {
+    content: '\f106';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    color: grey;
+    transform: rotate(90deg);
+  }
+}
+
+.footer__bottom {
+  margin-top: 15px;
+}
+
+.footer__copyright a {
+  color: $main-color;
+  font-weight: 700;
+}

@@ -1,0 +1,8 @@
+В переменную elemList помещаю каждую 3-ю строку таблицы с классом "zA"
+Далее с помощью цикла скрываю выбранные строки
+
+
+var elemList = document.querySelectorAll("tr.zA:nth-child(3n)");
+
+for(var i=0; i<elemList.length; i++)elemList[i].style.display='none';
+

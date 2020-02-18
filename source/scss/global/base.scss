@@ -1,0 +1,57 @@
+/************** Base styles **************/
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $main-font;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  font-family: $button;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: $title;
+  color: $title-color;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.clearfix {
+  &:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}

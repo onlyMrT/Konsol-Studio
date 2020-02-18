@@ -1,0 +1,49 @@
+.nav {
+  background: rgba(255,255,255,.8);
+  border-top: 1px solid #000;
+  border-bottom: 5px solid #000;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+ 
+.nav-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  z-index: 55;
+  &:before {
+    content: '\e908';
+    font-family: 'icomoon';
+    font-size: 28px;
+    cursor: pointer;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  &:hover:before {
+    color: $active-color;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255,255,255,0.8); 
+}
+
+.menu-link {
+  font: 17px $title;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $title-color;
+  padding: 15px 14px;
+  letter-spacing: 0.5px;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
